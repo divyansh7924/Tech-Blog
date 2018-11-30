@@ -14,86 +14,64 @@
 	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 
 </head>
-
 <body>
+	<header class="header-fixed">
 
-<header class="header-fixed">
+		<div class="header-limiter">
+	
+			<h1><a href="#">GizmoBeetle <span>(under Development)</span></a></h1>
+	
+			<nav>
+				<a href="#">Home</a>
+				<a href="http://www.gizmobeetle.ml/" class="selected">Blog</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+			</nav>
+	
+		</div>
+	
+	</header>
 
-	<div class="header-limiter">
-
-		<h1><a href="#">GizmoBeetle <span>(under Development)</span></a></h1>
-
-		<nav>
-			<a href="#">Home</a>
-			<a href="http://www.gizmobeetle.ml/" class="selected">Blog</a>
-			<a href="#">About</a>
-			<a href="#">Contact</a>
-		</nav>
-
-	</div>
-
-</header>
-
-<!-- You need this element to prevent the content of the page from jumping up -->
-<div class="header-fixed-placeholder"></div>
-
-<!-- The content of your page would go here. -->
-
-
-<div class="menu">
-
-	<img src="assets/mate20.jpg" alt="arrow" height="120">
-
-	<h1>Huawei mate 20 pro is the perfect phone for every power user?</h1>
-	<p>
-	Huawei today launched their flagship level smartphone in India. The Mate 20 Pro, powered with their new flagship processor Kirin 980. The Kirin 980 chip is great in what Huawei calls “A Higher Intelligence”. This chipset is manufactured with advanced 7 nm process, helping the phone to give improved performance, better battery efficiency, smooth user experience and obviously better AI capabilities, when compared with Kirin 970. Speaking about battery life this device has a massive 4200 mAh battery which will easily last a day long or more, Huawei packs in a 40 watt charger in the box which can charge the phone to 70% in just 30 mins, impressive isn’t it and don’t forget, this device can wirelessly charge other phones through which you can troll your other friends, but this doesn’t feel practical although it can be useful to wirelessly charge your supported accessories through this. Talking about AI. Huawei has partnered with Microsoft. Huawei with Microsoft has put hardware support for Microsoft translator app which enables the device to translate multiple languages to the language you want even when the device is offline. 
-			Ok so we know that you are waiting for the camera review, so this device just crushes every other device in present market in this. This device has a 40 MP wide angle lens having an aperture of f/1.8, a 20 MP ultra-wide-angle lens with f/2.2 aperture so you can capture much wider shots with this and an 8 MP telescopic lens with f/2.4 aperture. With its AI capabilities you can record videos with cinematic like experience. When we got our hands on the device, it can deliver outstanding performance, and you don’t even need to process photos after capturing them. This capture can capture excellent low light photos, here are some glimpses of the photos captured from the device.
-			
-			(Images)
-			
-			Speaking of the performance of the front camera, this device sports a 24 MP wide angle lens on the front. On the front this device has a 3d sensor for face unlock as same as Iphone XS  from which you can unlock the device with your face in just 0.6s. This device also has a in display fingerprint sensor which is pretty fast. We compared it with the Oneplus 6T and the performance of the Fingerprint sensor on the both the devices are almost same.  
-			This device packs in dolby atmos support due to which this is an excellent entertainment machine. Although you might find an issue when charging because the sound comes from the type-c port. This device is also IP68 certified and a anti fingerprint glass back. This device has a screen to body ratio of 86% and a Samsung like curved display which makes the phone feel premium. This device sells at a rate of 69,990 in India. Early bird buyers can also get a Sennheiser PXC 550 headphone by paying  a price of 71,990. The Headphone usually sells at a price of 29,990. We think this phone justifies it’s price point, what do you think comment down.
-	</p>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
 </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-
-	$(document).ready(function(){
-
-		var showHeaderAt = 150;
-
-		var win = $(window),
-				body = $('body');
-
-		// Show the fixed header only on larger screen devices
-
-		if(win.width() > 600){
-
-			// When we scroll more than 150px down, we set the
-			// "fixed" class on the body element.
-
-			win.on('scroll', function(e){
-
-				if(win.scrollTop() > showHeaderAt) {
-					body.addClass('fixed');
-				}
-				else {
-					body.removeClass('fixed');
-				}
-			});
-
-		}
-
-	});
-
-</script>
-
-
-<!-- Demo ads. Please ignore and remove. -->
-<script src="http://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
-
+<div class="footer">
+  <h2>Footer</h2>
+</div>
 
 </body>
-
 </html>
+

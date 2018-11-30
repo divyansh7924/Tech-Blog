@@ -1,124 +1,70 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-html{
-	background-color: #eaf0f2;
+* {
+    box-sizing: border-box;
 }
 
-body{
-	font:14px/1.5 Arial, Helvetica, sans-serif;
-	padding:0;
-	margin:0;
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
 }
 
-.menu{
-	text-align: center;
-	padding-top: 25px;
-	margin-bottom:200px;
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
 }
 
-.menu img{
-	width: 150px;
-    height: 100px;
-	margin: auto;
-	transform: rotate(90deg);
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
 }
 
-.menu h1{
-	margin-top:0;
-	font: normal 32px/1.5 'Open Sans', sans-serif;
-	color: #3F71AE;
-	padding-bottom: 16px;
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
 }
 
-.menu p{
-	text-align: justify;
-	text-justify: inter-word;
-	margin: 20%;
-	margin-top: 2%;
-	font: normal 19px/1.5 'Open Sans', sans-serif;
-	color: black;
-	padding-bottom: 16px;
-}
-.menu h2{
-	color: #F05283;
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
 }
 
-.menu h2 a{
-	color:inherit;
-	text-decoration: none;
-	display: inline-block;
-	border: 1px solid #F05283;
-	padding: 10px 15px;
-	border-radius: 3px;
-	font: bold 14px/1 'Open Sans', sans-serif;
-	text-transform: uppercase;
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
 }
 
-.menu h2 a:hover{
-	background-color:#F05283;
-	transition:0.2s;
-	color:#fff;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.menu ul {
-	max-width: 600px;
-	margin: 60px auto 0;
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
 }
 
-.menu ul a{
-	text-decoration: none;
-	color: #FFF;
-	text-align: left;
-	background-color: #B9C1CA;
-	padding: 10px 16px;
-	border-radius: 2px;
-	opacity: 0.8;
-	font-size: 16px;
-	display: inline-block;
-	margin: 4px;
-	line-height: 1;
-	outline: none;
-
-	transition: 0.2s ease;
-}
-
-.menu ul li a.active{
-	background-color: #66B650;
-	pointer-events: none;
-}
-
-.menu ul li a:hover {
-	opacity: 1;
-}
-
-.menu ul{
-	list-style: none;
-	padding: 0;
-}
-
-.menu ul li{
-	display: inline-block;
-}
-
-@media (max-height:800px){
-	.menu { padding-top:40px; }
-}
-
-
-/* -- Demo ads -- */
-
-@media (max-width: 1200px) {
-	#bsaHolder{ display:none;}
-}
-
-/* -- Link to Tutorialzine -- */
-
-.tz-link{
-	text-decoration: none;
-	color: #fff !important;
-	font: bold 36px Arial,Helvetica,sans-serif !important;
-}
-
-.tz-link span{
-	color: #da431c;
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
 }
